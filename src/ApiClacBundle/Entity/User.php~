@@ -1,0 +1,68 @@
+<?php
+namespace ApiClacBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * @ORM\Entity
+ * @ORM\Table(name="user")
+ */
+class User {
+
+    /**
+     * @ORM\Column(type="string", length=100)
+     */
+    private $pnr;
+
+    /**
+     * @ORM\Column(type="string")
+     */
+    private $name;
+
+    /**
+     * @ORM\Column(type="string")
+     */
+    private $surname;
+
+    /**
+     * @ORM\Column(type="string")
+     */
+    private $gender;
+
+    /**
+     * @ORM\Column(type="string")
+     */
+    private $civil;
+
+    /**
+     * @ORM\Column(type="string")
+     */
+    private $cabinCode;
+
+    /**
+     * @ORM\Column(type="string")
+     */
+    private $ticketNumber;
+
+    /**
+     * @ORM\Column(type="string")
+     */
+    private $services;
+
+    /**
+     * @ORM\Column(type="string")
+     */
+    private $frequentTravelerLevel;
+
+    /**
+     * @ORM\Column(type="string")
+     */
+    private $phoneNumber;
+
+    /**
+     * @ORM\Column(type="string")
+     */
+    private $email;
+
+    
+}
